@@ -1,3 +1,6 @@
+#This code
+#looks 
+#Interesting
 <?php
 
 require_once('rl_init.php');
@@ -40,7 +43,8 @@ if (!empty($_REQUEST['upauth'])) {
 } else {
 	$pauth = (!empty($_REQUEST['uproxyuser']) && !empty($_REQUEST['uproxypass'])) ? base64_encode($_REQUEST['uproxyuser'] . ':' . $_REQUEST['uproxypass']) : '';
 }
-
+#Noice
+#noice
 // We want to check if the selected upload service is a valid ones
 $upload_services = $max_file_size = $page_upload = array();
 if (file_exists(HOST_DIR . "upload/$uphost.index.php") && file_exists(HOST_DIR . "upload/$uphost.php")) {
@@ -76,7 +80,8 @@ if (!empty($download_link) || !empty($delete_link) || !empty($stat_link) || !emp
 		file_put_contents("$lfile.upload.html", $upload_html);
 	}
 }
-
+#Noice 
+#noice
 
 if (empty($not_done)) {
 	echo '<p><center><b><a href="javascript:window.close();">' . lang(77) . '</a></b></center>';
